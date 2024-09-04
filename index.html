@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar Example</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <a href="#">KOSSMART</a>
+        </div>
+        <div class="navbar__right">
+          <ul class="navbar__menu">
+            <li><a href="#home">Tentang Kami</a></li>
+            <li><a href="#about">Pusat Bantuan</a></li>
+          </ul>
+          <div class="navbar__buttons">
+            <a href="#login" class="btn btn--primary">Masuk</a>
+            <a href="#register" class="btn btn--secondary">Daftar</a>
+          </div>
+          <div class="navbar__toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu hidden">
+        <ul>
+          <li><a href="#home">Tentang Kami</a></li>
+          <li><a href="#about">Pusat Bantuan</a></li>
+          <li><a href="#login">Masuk</a></li>
+          <li><a href="#register">Daftar</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__headline">Cari Kost Mudah Tanpa Keliling Kota</h1>
+        <p class="hero__tagline">
+          Cari kost jadi lebih mudah, cepat dan lengkap. Bisa cari kapan saja
+          dan dimana saja.
+        </p>
+        <div class="hero__search">
+          <input
+            type="text"
+            class="hero__search-input"
+            placeholder="Cari nama lokasi/area/alamat"
+          />
+          <button class="hero__search-button">Cari</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="recommendation">
+      <div class="slider-header">
+        <h1>Rekomendasi Kosan Terdekat</h1>
+      </div>
+      <div class="recommendation-container">
+        <div class="property-card" data-link="detail.html">
+          <div class="property-image">
+            <img src="img/kosancewe.jpg" alt="Kos 1" />
+            <div class="verification-icon">
+              <i class="fa-solid fa-check"></i>Verified
+            </div>
+          </div>
+          <div class="status-container">
+            <div class="status-box">
+              <i class="fa-solid fa-venus"></i>Kost Putri
+            </div>
+            <div class="status-box"><i class="fa-solid fa-house"></i> Kost</div>
+          </div>
+          <h2 class="property-name">Kos Bude Sumarti - Adiarsa</h2>
+          <p class="property-address">
+            Teluk Jambe Timur, Karawang, Jawa Barat
+          </p>
+          <p class="property-rating"><span>★</span> 4.5</p>
+          <hr class="divider" />
+          <div class="facilities">
+            <i class="fa-solid fa-bath"></i>1 <i class="fa-solid fa-bed"></i>1
+            <i class="fa-solid fa-wifi"></i>1
+          </div>
+          <div class="property-footer">
+            <button class="bookmark-btn" aria-pressed="false">
+              <i class="fa-solid fa-bookmark"></i>
+            </button>
+            <p class="property-price">Rp 800.000/bulan</p>
+          </div>
+        </div>
+        <div class="property-card" data-link="detail.html">
+          <div class="property-image">
+            <img src="img/koscowo.jpg" alt="Kos 1" />
+            <div class="verification-icon">
+              <i class="fa-solid fa-check"></i>Verified
+            </div>
+          </div>
+          <div class="status-container">
+            <div class="status-box">
+              <i class="fa-solid fa-mars"></i>Kost Putra
+            </div>
+            <div class="status-box"><i class="fa-solid fa-house"></i> Kost</div>
+          </div>
+          <h2 class="property-name">Kos Pemuda Galau - Ulekan</h2>
+          <p class="property-address">
+            Teluk Jambe Timur, Karawang, Jawa Barat
+          </p>
+          <p class="property-rating"><span>★</span> 4.5</p>
+          <hr class="divider" />
+          <div class="facilities">
+            <i class="fa-solid fa-bath"></i>1 <i class="fa-solid fa-bed"></i>1
+            <i class="fa-solid fa-wifi"></i>1
+          </div>
+          <div class="property-footer">
+            <button class="bookmark-btn" aria-pressed="false">
+              <i class="fa-solid fa-bookmark"></i>
+            </button>
+            <p class="property-price">Rp 1.500.000/bulan</p>
+          </div>
+        </div>
+        <div class="property-card" data-link="detail.html">
+          <div class="property-image">
+            <img src="img/kontrakan.jpg" alt="Kos 1" />
+            <div class="verification-icon">
+              <i class="fa-solid fa-check"></i>Verified
+            </div>
+          </div>
+          <div class="status-container">
+            <div class="status-box">
+              <i class="fa-solid fa-house-chimney"></i> Kontrakan
+            </div>
+          </div>
+          <h2 class="property-name">Kontrakan Pepes - Pepabri</h2>
+          <p class="property-address">
+            Teluk Jambe Timur, Karawang, Jawa Barat
+          </p>
+          <p class="property-rating"><span>★</span> 4.5</p>
+          <hr class="divider" />
+          <div class="facilities">
+            <i class="fa-solid fa-bath"></i>2 <i class="fa-solid fa-bed"></i>1
+            <i class="fa-solid fa-wifi"></i>2
+          </div>
+          <div class="property-footer">
+            <button class="bookmark-btn" aria-pressed="false">
+              <i class="fa-solid fa-bookmark"></i>
+            </button>
+            <p class="property-price">Rp 2.800.000/bulan</p>
+          </div>
+        </div>
+        <div class="property-card" data-link="detail.html">
+          <div class="property-image">
+            <img src="img/koscowo.jpg" alt="Kos 1" />
+            <div class="verification-icon">
+              <i class="fa-solid fa-check"></i>Verified
+            </div>
+          </div>
+          <div class="status-container">
+            <div class="status-box">
+              <i class="fa-solid fa-building"></i>Apartemen
+            </div>
+            <div class="status-box">
+              <i class="fa-solid fa-venus-mars"></i> Campur
+            </div>
+          </div>
+          <h2 class="property-name">Apartemen Grand Injury Galuhmas</h2>
+          <p class="property-address">
+            Teluk Jambe Timur, Karawang, Jawa Barat
+          </p>
+          <p class="property-rating"><span>★</span> 4.5</p>
+          <hr class="divider" />
+          <div class="facilities">
+            <i class="fa-solid fa-bath"></i>1 <i class="fa-solid fa-bed"></i>1
+            <i class="fa-solid fa-wifi"></i>1
+          </div>
+          <div class="property-footer">
+            <button class="bookmark-btn" aria-pressed="false">
+              <i class="fa-solid fa-bookmark"></i>
+            </button>
+            <p class="property-price">Rp 1.500.000/bulan</p>
+          </div>
+        </div>
+        <div class="property-card" data-link="detail.html">
+          <div class="property-image">
+            <img src="img/Kontrakan jelek.jpg" alt="Kos 1" />
+            <div class="verification-icon">
+              <i class="fa-solid fa-check"></i>Verified
+            </div>
+          </div>
+          <div class="status-container">
+            <div class="status-box">
+              <i class="fa-solid fa-house-chimney"></i>Kontrakan
+            </div>
+            <div class="status-box">
+              <i class="fa-solid fa-venus-mars"></i> Campur
+            </div>
+          </div>
+          <h2 class="property-name">Apartemen Grand Injury Galuhmas</h2>
+          <p class="property-address">
+            Teluk Jambe Timur, Karawang, Jawa Barat
+          </p>
+          <p class="property-rating"><span>★</span> 4.5</p>
+          <hr class="divider" />
+          <div class="facilities">
+            <i class="fa-solid fa-bath"></i>1 <i class="fa-solid fa-bed"></i>1
+            <i class="fa-solid fa-wifi"></i>1
+          </div>
+          <div class="property-footer">
+            <button class="bookmark-btn" aria-pressed="false">
+              <i class="fa-solid fa-bookmark"></i>
+            </button>
+            <p class="property-price">Rp 1.500.000/bulan</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recommendation">
+      <div class="slider-header">
+        <h1>Rekomendasi Kosan Terlaris</h1>
+      </div>
+      <div class="recommendation-container">
+        <div class="property-card" data-link="detail.html">
+          <div class="property-image">
+            <img src="img/kosancewe.jpg" alt="Kos 1" />
+            <div class="verification-icon">
+              <i class="fa-solid fa-check"></i>Verified
+            </div>
+          </div>
+          <div class="status-container">
+            <div class="status-box">
+              <i class="fa-solid fa-venus"></i>Kost Putri
+            </div>
+            <div class="status-box"><i class="fa-solid fa-house"></i> Kost</div>
+          </div>
+          <h2 class="property-name">Kos Bude Sumarti - Adiarsa</h2>
+          <p class="property-address">
+            Teluk Jambe Timur, Karawang, Jawa Barat
+          </p>
+          <p class="property-rating"><span>★</span> 4.5</p>
+          <hr class="divider" />
+          <div class="facilities">
+            <i class="fa-solid fa-bath"></i>1 <i class="fa-solid fa-bed"></i>1
+            <i class="fa-solid fa-wifi"></i>1
+          </div>
+          <div class="property-footer">
+            <button class="bookmark-btn" aria-pressed="false">
+              <i class="fa-solid fa-bookmark"></i>
+            </button>
+            <p class="property-price">Rp 800.000/bulan</p>
+          </div>
+        </div>
+        <div class="property-card" data-link="detail.html">
+          <div class="property-image">
+            <img src="img/koscowo.jpg" alt="Kos 1" />
+            <div class="verification-icon">
+              <i class="fa-solid fa-check"></i>Verified
+            </div>
+          </div>
+          <div class="status-container">
+            <div class="status-box">
+              <i class="fa-solid fa-mars"></i>Kost Putra
+            </div>
+            <div class="status-box"><i class="fa-solid fa-house"></i> Kost</div>
+          </div>
+          <h2 class="property-name">Kos Pemuda Galau - Ulekan</h2>
+          <p class="property-address">
+            Teluk Jambe Timur, Karawang, Jawa Barat
+          </p>
+          <p class="property-rating"><span>★</span> 4.5</p>
+          <hr class="divider" />
+          <div class="facilities">
+            <i class="fa-solid fa-bath"></i>1 <i class="fa-solid fa-bed"></i>1
+            <i class="fa-solid fa-wifi"></i>1
+          </div>
+          <div class="property-footer">
+            <button class="bookmark-btn" aria-pressed="false">
+              <i class="fa-solid fa-bookmark"></i>
+            </button>
+            <p class="property-price">Rp 1.500.000/bulan</p>
+          </div>
+        </div>
+        <div class="property-card" data-link="detail.html">
+          <div class="property-image">
+            <img src="img/kontrakan.jpg" alt="Kos 1" />
+            <div class="verification-icon">
+              <i class="fa-solid fa-check"></i>Verified
+            </div>
+          </div>
+          <div class="status-container">
+            <div class="status-box">
+              <i class="fa-solid fa-house-chimney"></i> Kontrakan
+            </div>
+          </div>
+          <h2 class="property-name">Kontrakan Pepes - Pepabri</h2>
+          <p class="property-address">
+            Teluk Jambe Timur, Karawang, Jawa Barat
+          </p>
+          <p class="property-rating"><span>★</span> 4.5</p>
+          <hr class="divider" />
+          <div class="facilities">
+            <i class="fa-solid fa-bath"></i>2 <i class="fa-solid fa-bed"></i>1
+            <i class="fa-solid fa-wifi"></i>2
+          </div>
+          <div class="property-footer">
+            <button class="bookmark-btn" aria-pressed="false">
+              <i class="fa-solid fa-bookmark"></i>
+            </button>
+            <p class="property-price">Rp 2.800.000/bulan</p>
+          </div>
+        </div>
+        <div class="property-card" data-link="detail.html">
+          <div class="property-image">
+            <img src="img/koscowo.jpg" alt="Kos 1" />
+            <div class="verification-icon">
+              <i class="fa-solid fa-check"></i>Verified
+            </div>
+          </div>
+          <div class="status-container">
+            <div class="status-box">
+              <i class="fa-solid fa-building"></i>Apartemen
+            </div>
+            <div class="status-box">
+              <i class="fa-solid fa-venus-mars"></i> Campur
+            </div>
+          </div>
+          <h2 class="property-name">Apartemen Grand Injury Galuhmas</h2>
+          <p class="property-address">
+            Teluk Jambe Timur, Karawang, Jawa Barat
+          </p>
+          <p class="property-rating"><span>★</span> 4.5</p>
+          <hr class="divider" />
+          <div class="facilities">
+            <i class="fa-solid fa-bath"></i>1 <i class="fa-solid fa-bed"></i>1
+            <i class="fa-solid fa-wifi"></i>1
+          </div>
+          <div class="property-footer">
+            <button class="bookmark-btn" aria-pressed="false">
+              <i class="fa-solid fa-bookmark"></i>
+            </button>
+            <p class="property-price">Rp 1.500.000/bulan</p>
+          </div>
+        </div>
+        <div class="property-card" data-link="detail.html">
+          <div class="property-image">
+            <img src="img/Kontrakan jelek.jpg" alt="Kos 1" />
+            <div class="verification-icon">
+              <i class="fa-solid fa-check"></i>Verified
+            </div>
+          </div>
+          <div class="status-container">
+            <div class="status-box">
+              <i class="fa-solid fa-house-chimney"></i>Kontrakan
+            </div>
+            <div class="status-box">
+              <i class="fa-solid fa-venus-mars"></i> Campur
+            </div>
+          </div>
+          <h2 class="property-name">Apartemen Grand Injury Galuhmas</h2>
+          <p class="property-address">
+            Teluk Jambe Timur, Karawang, Jawa Barat
+          </p>
+          <p class="property-rating"><span>★</span> 4.5</p>
+          <hr class="divider" />
+          <div class="facilities">
+            <i class="fa-solid fa-bath"></i>1 <i class="fa-solid fa-bed"></i>1
+            <i class="fa-solid fa-wifi"></i>1
+          </div>
+          <div class="property-footer">
+            <button class="bookmark-btn" aria-pressed="false">
+              <i class="fa-solid fa-bookmark"></i>
+            </button>
+            <p class="property-price">Rp 1.500.000/bulan</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-left">
+        <h1>KOSSMART</h1>
+        <p class="footer-address">
+          <i class="fa-solid fa-location-dot"></i> Jl. HS.Ronggo Waluyo,
+          Puseurjaya, Telukjambe Timur, Karawang, Jawa Barat - 41361
+        </p>
+      </div>
+      <div class="footer-right">
+        <h3>Contact</h3>
+        <p class="footer-contact">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:email@example.com">email@example.com</a>
+        </p>
+        <p class="footer-contact">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+123456789">+123 456 789</a>
+        </p>
+        <p class="footer-contact">
+          <i class="fa-solid fa-globe"></i>
+          <a href="http://example.com">example.com</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
